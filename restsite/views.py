@@ -1,4 +1,6 @@
+from django.core.mail import EmailMultiAlternatives
 from django.shortcuts import render
+from django.template.loader import get_template
 
 from restsite.forms import ContactForm
 from restsite.models import ItemModel, TestModel
@@ -21,7 +23,10 @@ def about(requests):
 def contact(requests):
     context = {}
     if requests.method == 'POST':
-        pass
+        form = ContactForm(requests.POST)
+        if form.is_valid():
+            send_messege(form.cleaned_data['name'], form.cleaned_data['email'], form.cleaned_data['messege'])
+            context = {'success': 1}
     else:
         form = ContactForm()
     context['form'] = form
@@ -31,4 +36,17 @@ def contact(requests):
     context=context
     )
 
+
+def send_messege(name, email, messege):
+    text = get_template('messege.html')
+    html = get_template('messege.html')
+    context = {'name': name, 'email': email, 'messege': messege}
+    subject = 'Сообщение от пользователя'
+    from_email = 'from@example.com'
+    text_content = text.render(context)
+    html_content = html.render(context)
+
+    msg = EmailMultiAlternatives(subject, text_content, from_email, ['gorelov2895@yandex.ru'])
+    msg.attach_alternative(html_content, 'text/html')
+    msg.send()
 

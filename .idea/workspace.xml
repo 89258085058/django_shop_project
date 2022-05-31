@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23e5361d-73d5-472f-9a77-f2fea7193199" name="Changes" comment="добавлен шаблон html для вывода моделей">
+    <list default="true" id="23e5361d-73d5-472f-9a77-f2fea7193199" name="Changes" comment="добавлен requirements.txt">
+      <change afterPath="$PROJECT_DIR$/restsite/templates/messege.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restsite/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/restsite/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restsite/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/restsite/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restsite/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/restsite/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restsite/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/restsite/templates/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restsite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/restsite/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -74,7 +72,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653756166048</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="добавлены формы">
+      <created>1653844952497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653844952497</updated>
+    </task>
+    <task id="LOCAL-00004" summary="добавлен requirements.txt">
+      <created>1653845062714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653845062714</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +103,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавлен шаблон html для вывода моделей" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлен шаблон html для вывода моделей" />
+    <MESSAGE value="добавлены формы" />
+    <MESSAGE value="добавлен requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлен requirements.txt" />
   </component>
 </project>
